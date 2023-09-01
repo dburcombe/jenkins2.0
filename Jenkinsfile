@@ -22,6 +22,7 @@ pipeline {
 			   """
                          }
                    }
+	       } 	
                stage('NonMainBranchPreSteps') {
                    when {
                        not {
@@ -34,7 +35,7 @@ pipeline {
 		   steps {
  		       echo 'This is not the main branch so won't trigger a build'	    			       }
 		
-		
+	       }	
         stage('Build') {
             steps {
                 echo 'Building..'
