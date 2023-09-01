@@ -33,7 +33,7 @@ pipeline {
 		       }	
 		   }
 		   steps {
- 		       echo 'This is not the main branch so won't trigger a build'	    			       }
+ 		       echo 'This is not the main branch so will not trigger a build'	    			       }
 		
 	       }	
         stage('Build') {
